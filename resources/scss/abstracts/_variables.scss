@@ -1,0 +1,140 @@
+// Colors — Design System (from Figma)
+$color-primary: #8fa392;
+$color-primary-dark: #6b7d6e;
+$color-primary-darker: #5c8a6b;
+$color-primary-deep: #4a7a60;
+$color-accent-dark: #284e3b;
+$color-dark-green: #2c3e30;
+$color-dark-section: #253328;
+$color-footer-bg: #1e2a21;
+$color-code-bg: #13181a;
+$color-code-header: #1b2124;
+
+$color-bg-main: #f7f7f2;
+$color-bg-section: #faf9f5;
+$color-bg-white: #ffffff;
+$color-bg-card: #eef3ef;
+$color-bg-input: #fafaf8;
+$color-bg-faq: #f4f7f4;
+$color-bg-faq-hover: #eef3ef;
+
+$color-text-heading: #121a14;
+$color-text-primary: #1a1d1a;
+$color-text-body: #4a5249;
+$color-text-body-alt: #4a4d4a;
+$color-text-muted: #7a8a7a;
+$color-text-light: #c2d1c5;
+$color-text-light-alt: #d1dcd3;
+$color-text-footer: #ebebeb;
+$color-text-on-dark: #e0ede3;
+$color-text-error: #e05a5a;
+$color-star: #f59e0b;
+$color-whatsapp: #25d366;
+
+$color-border: #e8ede8;
+$color-border-alt: #eaeaea;
+$color-border-light: #e2e8e3;
+$color-border-accent: #c5d5c7;
+$color-border-primary: rgba(143, 163, 146, 0.15);
+$color-border-primary-strong: rgba(143, 163, 146, 0.25);
+$color-border-primary-medium: rgba(143, 163, 146, 0.2);
+$color-border-primary-soft: rgba(143, 163, 146, 0.3);
+
+$gradient-primary: linear-gradient(163deg, $color-primary 0%, $color-primary-dark 100%);
+$gradient-primary-text: linear-gradient(160deg, $color-primary 0%, $color-primary-deep 100%);
+$gradient-why-us: linear-gradient(154deg, $color-primary 0%, $color-primary-dark 100%);
+$gradient-cta-dark: linear-gradient(150deg, #253328 0%, #1a2e1d 50%, #0f1a10 100%);
+$gradient-header: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgb(239, 235, 224) 100%);
+$gradient-divider: linear-gradient(to right, $color-dark-green, #5a7a5e);
+
+// Typography
+$font-primary: 'Cairo', sans-serif;
+$font-secondary: 'Inter', sans-serif;
+
+$font-size-xs: 10.35px;
+$font-size-sm: 12px;
+$font-size-base: 13px;
+$font-size-md: 14px;
+$font-size-lg: 16px;
+$font-size-xl: 18px;
+$font-size-2xl: 20px;
+$font-size-3xl: 36px;
+$font-size-4xl: 42px;
+$font-size-5xl: 52px;
+$font-size-6xl: 56px;
+$font-size-hero: 58px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
+
+$line-height-tight: 1.2;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.8;
+
+// Spacing
+$spacing-1: 4px;
+$spacing-2: 8px;
+$spacing-3: 12px;
+$spacing-4: 16px;
+$spacing-5: 20px;
+$spacing-6: 24px;
+$spacing-7: 32px;
+$spacing-8: 40px;
+$spacing-9: 48px;
+$spacing-10: 64px;
+$spacing-11: 80px;
+$spacing-12: 96px;
+
+$container-max: 1280px;
+$container-padding: 24px;
+
+// Border Radius
+$radius-xs: 5px;
+$radius-sm: 8px;
+$radius-md: 10px;
+$radius-lg: 12px;
+$radius-xl: 14px;
+$radius-2xl: 16px;
+$radius-3xl: 20px;
+$radius-4xl: 24px;
+$radius-5xl: 36px;
+$radius-pill: 50px;
+$radius-full: 999px;
+
+// Shadows
+$shadow-xs: 0 2px 12px rgba(0, 0, 0, 0.04);
+$shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 8px 16px rgba(143, 163, 146, 0.15);
+$shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 32px 80px rgba(0, 0, 0, 0.38);
+$shadow-card: 0 4px 10px rgba(0, 0, 0, 0.04);
+$shadow-icon: 0 6px 10px rgba(143, 163, 146, 0.35);
+$shadow-button: 0 3px 8px rgba(44, 62, 48, 0.22);
+$shadow-float: 0 12px 18px rgba(0, 0, 0, 0.12);
+
+// Breakpoints
+$breakpoint-xxl: 1920px;
+$breakpoint-xl: 1600px;
+$breakpoint-lg: 1440px;
+$breakpoint-md-lg: 1366px;
+$breakpoint-md: 1200px;
+$breakpoint-sm-lg: 992px;
+$breakpoint-sm: 768px;
+$breakpoint-xs-lg: 576px;
+$breakpoint-xs: 390px;
+$breakpoint-xxs: 375px;
+$breakpoint-tiny: 360px;
+$breakpoint-min: 320px;
+
+// Z-index
+$z-header: 1000;
+$z-mobile-menu: 1100;
+$z-whatsapp: 900;
+
+// Transitions
+$transition-base: 0.3s ease;
+$transition-fast: 0.2s ease;

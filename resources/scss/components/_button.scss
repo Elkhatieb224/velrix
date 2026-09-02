@@ -1,0 +1,107 @@
+@use '../abstracts' as *;
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-2;
+    padding: 10px 22px;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    border-radius: $radius-md;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all $transition-base;
+    white-space: nowrap;
+    @include focus-ring;
+
+    &--primary {
+        background: $color-dark-green;
+        color: $color-bg-white;
+        box-shadow: $shadow-button;
+
+        &:hover {
+            background: #243329;
+            transform: translateY(-1px);
+        }
+    }
+
+    &--secondary {
+        background: $color-bg-card;
+        color: $color-text-heading;
+        border-color: $color-border-accent;
+
+        &:hover {
+            background: #e5ebe6;
+        }
+    }
+
+    &--outline {
+        background: transparent;
+        color: $color-primary;
+        border-color: $color-primary;
+
+        &:hover {
+            background: rgba($color-primary, 0.08);
+        }
+    }
+
+    &--gradient {
+        background: $gradient-primary;
+        color: $color-text-primary;
+        border-radius: $radius-pill;
+        padding: 8px 24px;
+        font-size: 14.9px;
+        font-weight: $font-weight-medium;
+
+        &:hover {
+            opacity: 0.92;
+        }
+    }
+
+    &--cta-light {
+        background: $color-bg-card;
+        color: $color-text-heading;
+        border-radius: $radius-pill;
+        padding: 14px 28px;
+        font-size: $font-size-md;
+
+        &:hover {
+            background: #dce5dd;
+        }
+    }
+
+    &--cta-dark {
+        background: $color-dark-green;
+        color: $color-bg-white;
+        border-radius: $radius-pill;
+        padding: 14px 28px;
+        font-size: $font-size-md;
+
+        &:hover {
+            background: #334a38;
+        }
+    }
+
+    &--lg {
+        padding: 22px 42px;
+        font-size: 26px;
+        border-radius: $radius-3xl;
+    }
+
+    &--full {
+        width: 100%;
+    }
+
+    &--icon {
+        img, svg {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}

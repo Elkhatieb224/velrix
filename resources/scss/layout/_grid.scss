@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+.container {
+    @include container;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -12px;
+}
+
+.col-12 { width: 100%; padding-inline: 12px; }
+
+@include respond-up($breakpoint-sm) {
+    .col-sm-6 { width: 50%; padding-inline: 12px; }
+}
+
+@include respond-up($breakpoint-sm-lg) {
+    .col-lg-4 { width: 33.333%; padding-inline: 12px; }
+    .col-lg-6 { width: 50%; padding-inline: 12px; }
+}
+
+@include respond-up($breakpoint-md) {
+    .col-xl-3 { width: 25%; padding-inline: 12px; }
+    .col-xl-4 { width: 33.333%; padding-inline: 12px; }
+}

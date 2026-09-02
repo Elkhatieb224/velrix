@@ -1,0 +1,271 @@
+@use '../abstracts' as *;
+
+.site-footer {
+    background: $color-footer-bg;
+    color: $color-text-footer;
+
+    &__main {
+        @include container;
+        padding-top: 72px;
+        padding-bottom: 48px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1.35fr 0.85fr 0.85fr 1fr;
+        gap: $spacing-8;
+
+        @include respond-down($breakpoint-md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include respond-down($breakpoint-sm) {
+            grid-template-columns: 1fr;
+            gap: $spacing-7;
+        }
+    }
+
+    &__brand {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__logo {
+        width: 75px;
+        height: 75px;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        img {
+            width: 109.58%;
+            height: 100%;
+            max-width: none;
+            margin-right: -4.79%;
+            object-fit: contain;
+        }
+    }
+
+    &__brand p {
+        font-size: 14px;
+        line-height: 25.9px;
+        color: #c2d1c5;
+        max-width: 247px;
+        margin-top: 20px;
+    }
+
+    &__social {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        justify-content: flex-start;
+        margin-top: 28px;
+    }
+
+    &__social-link {
+        @include flex-center;
+        width: 36px;
+        height: 36px;
+        border-radius: 9px;
+        background: rgba($color-primary, 0.1);
+        border: 2px solid rgba($color-primary, 0.2);
+        flex-shrink: 0;
+        transition: background $transition-fast;
+
+        &:hover {
+            background: rgba($color-primary, 0.25);
+        }
+
+        img {
+            width: 16px;
+            height: 16px;
+            display: block;
+        }
+    }
+
+    &__column {
+        text-align: right;
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: $font-weight-extrabold;
+        color: $color-bg-white;
+        letter-spacing: 0.3px;
+        margin-bottom: 20px;
+        text-align: right;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        align-items: flex-start;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 7px;
+        font-size: 14px;
+        line-height: 21px;
+        color: #ebebeb;
+        transition: color $transition-fast;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        img {
+            width: 10px;
+            height: 10px;
+            flex-shrink: 0;
+        }
+    }
+
+    &__contact {
+        text-align: right;
+    }
+
+    &__contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-bottom: 14px;
+    }
+
+    &__contact-value {
+        font-size: 13px;
+        line-height: 20.8px;
+        color: $color-text-light;
+
+        &--ltr {
+            direction: ltr;
+            unicode-bidi: embed;
+            text-align: right;
+        }
+    }
+
+    &__contact-icon {
+        @include flex-center;
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        background: rgba($color-primary, 0.1);
+        border: 2px solid rgba($color-primary, 0.2);
+        border-radius: 8px;
+
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    &__newsletter {
+        margin-top: 28px;
+
+        h5 {
+            font-size: 12px;
+            font-weight: $font-weight-bold;
+            color: $color-bg-white;
+            margin-bottom: 10px;
+            text-align: right;
+        }
+    }
+
+    &__newsletter-form {
+        display: flex;
+        gap: 6px;
+        flex-direction: row;
+
+        input {
+            flex: 1;
+            min-width: 0;
+            background: rgba($color-primary, 0.08);
+            border: 2px solid rgba($color-primary, 0.2);
+            border-radius: 9px;
+            padding: 9px 12px;
+            font-size: 12px;
+            color: $color-bg-white;
+            text-align: right;
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        button {
+            background: $color-primary;
+            color: $color-bg-white;
+            border: none;
+            border-radius: 9px;
+            padding: 9px 14px;
+            font-size: 12px;
+            font-weight: $font-weight-bold;
+            cursor: pointer;
+            white-space: nowrap;
+            flex-shrink: 0;
+
+            &:hover {
+                background: $color-primary-dark;
+            }
+        }
+    }
+
+    &__bottom {
+        border-top: 2px solid $color-border-primary-medium;
+    }
+
+    &__bottom-inner {
+        @include container;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: $spacing-5;
+        flex-wrap: wrap;
+        gap: $spacing-4;
+
+        @include respond-down($breakpoint-sm) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__copyright,
+    &__legal a {
+        font-size: 13px;
+        color: rgba(235, 235, 235, 0.9);
+    }
+
+    &__legal {
+        display: flex;
+        gap: $spacing-5;
+    }
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    z-index: $z-whatsapp;
+    width: 40px;
+    height: 40px;
+    background: $color-whatsapp;
+    border-radius: $radius-3xl;
+    @include flex-center;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.16);
+    transition: transform $transition-fast;
+
+    &:hover {
+        transform: scale(1.08);
+    }
+
+    svg {
+        width: 22px;
+        height: 22px;
+        fill: $color-bg-white;
+    }
+}

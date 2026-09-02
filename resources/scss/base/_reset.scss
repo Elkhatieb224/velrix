@@ -1,0 +1,83 @@
+@use '../abstracts' as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: $font-primary;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-normal;
+    color: $color-text-body;
+    background-color: $color-bg-main;
+    direction: rtl;
+    text-align: right;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color $transition-fast;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-text-heading;
+    font-weight: $font-weight-black;
+    line-height: $line-height-tight;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.text-gradient {
+    @include text-gradient;
+}
+
+.section-padding {
+    padding-block: $spacing-10;
+
+    @include respond-down($breakpoint-sm) {
+        padding-block: $spacing-8;
+    }
+}
