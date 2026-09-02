@@ -6,12 +6,11 @@
 
     <div class="hero__card" data-aos="fade-left">
         <h1 class="hero__title">
-            نحول الأفكار إلى حلول<br>رقمية ذكية
+            نحول الأفكار إلى حلول <span class="hero__title-break">رقمية ذكية</span>
         </h1>
         <div class="hero__divider" aria-hidden="true"></div>
         <p class="hero__desc">
-            نبتكر تطبيقات ومواقع وتجارب مستخدم قائمة على الذكاء<br>
-            الاصطناعي لنمو عملك وتطوير حصتك السوقية.
+            نبتكر تطبيقات ومواقع وتجارب مستخدم قائمة على الذكاء الاصطناعي لنمو عملك وتطوير حصتك السوقية.
         </p>
         <div class="hero__stats">
             <span class="hero__stat">+50 مشروع ناجح</span>

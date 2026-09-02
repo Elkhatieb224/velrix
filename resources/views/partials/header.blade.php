@@ -6,8 +6,16 @@
 
         @include('partials.navbar')
 
+        <button class="mobile-menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <div class="site-header__cta">
             <a href="{{ route('contact') }}" class="btn btn--gradient">تواصل معنا</a>
         </div>
     </div>
 </header>
+
+@include('partials.mobile-menu')
